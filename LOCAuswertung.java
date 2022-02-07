@@ -29,7 +29,7 @@ public class LOCAuswertung
 
         if (!file.exists() || file == null){
             throw new NotFindFileException(file.getAbsolutePath());
-        }else if (!file.isFile() || !file.canRead() || !file.canExecute()){
+        }else if (!file.isFile() || !file.canRead() ){
             throw new NotReadAbleFileException(file.getAbsolutePath());
         }
 
