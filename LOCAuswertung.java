@@ -16,7 +16,13 @@ public class LOCAuswertung
     private int totalLines;
     private static final int MIN_INPUT = 0;
     private static final String COMMENT = "//";
-
+    
+    
+    public LOCAuswertung(){
+        this.totalLines = 0;
+        this.numberOfFiles = 0;
+    }
+    
     /**
      * die Methode liest und zaehlt wie viele Zeilen in einer Script gefunden werden
      * (Kommentare mit "//" oder leere Zeilen werden ignoriert)
@@ -55,7 +61,7 @@ public class LOCAuswertung
 
     /**
      * @param args array mit alle uebergegebenen dateien
-     * @return Zeichenkette mit der Ergebniss von gelesenen Werten 
+     * @return Zeichenkette mit dem Ergebniss von gelesenen Werten 
      */
     private String read(String[] args) {
         checkArgs(args);
