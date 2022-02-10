@@ -1,9 +1,8 @@
-
 /**
- * Beschreiben Sie hier die Klasse InvalidArgsInput.
+ * Spezifische Ausnahmenklasse falls keine Datei uebergegeben wird
  * 
- * @author (Ihr Name) 
- * @version (eine Versionsnummer oder ein Datum)
+ * @author (Basel) , (Anas) 
+ * @version (06.02.2022)
  */
 public class InvalidArgsInput extends RuntimeException
 {
